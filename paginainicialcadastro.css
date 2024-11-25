@@ -25,6 +25,12 @@ header{
     justify-content: space-between;
 }
 
+#paginainicial{
+    border: 2px solid hsl(219, 29%, 41%) ;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 nav ul{
     list-style: none;
     display: flex;

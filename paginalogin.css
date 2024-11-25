@@ -30,21 +30,6 @@ body{
     font-size: 30px;
 }
 
-.botaocomecar{
-    background-color: transparent;
-    border: 3px solid white;
-    padding: 10px; 
-    text-align: center; 
-    font-size: 30px;
-    margin: 2px 2px; 
-    cursor: pointer;
-    border-radius: 30px;
-    position: absolute;
-    top: 450px;
-    left: 250px;
-
-}
-
 .ladodireito {
     flex: 1; 
     background-color: #273DCE; 

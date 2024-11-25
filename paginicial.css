@@ -35,7 +35,7 @@ nav ul{
     position: absolute;
 }
 
-#paginicial{
+#home{
     border: 2px solid hsl(219, 29%, 41%) ;
     border-radius: 10px;
 }
@@ -103,23 +103,6 @@ nav ul li a:hover{
 
 .pedido p {
     font-size: 20px;
-}
-
-.chat{
-    border-radius: 20px;
-    padding:160px;
-    align-items: center;
-    border: 1px solid rgb(61, 61, 66);
-    box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-#messagem{
-   padding:5px 85px;
-   transform: translate(-110px,180px);
-}
-
-#enviar{
-    transform: translate(190px, 154px);
 }
 
 footer{
