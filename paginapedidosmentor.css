@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+header{
+    background-image: url(projeto.jpeg);
+    filter: brightness(100%);
+    padding: 15px;
+    background-size: contain;
+    width: 100%;
+    height: 190px;
+    color: #ffffff;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    left: 45%;
+    top: 20px;
+    position: absolute;
+}
+
+#pedidosdemonitoria{
+    border: 2px solid hsl(219, 29%, 41%) ;
+    border-radius: 10px;
+}
+
+nav ul li{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.pedidos{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pedidos h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.pedido{
+    padding: 50px 20px;
+    background-color: hsl(219, 50%, 90%);
+}
+
+.quadrodepedido{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.pedido1{
+    background-color: hsl(219, 50%, 75%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.pedido1 h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.pedido p {
+    font-size: 20px;
+}
+
+#descricao{
+   padding: 5px;
+   width: 950px;
+   height: 200px;
+   transform: translate(10px,10px);
+}
+
+.candidatar{
+    width: 50%;
+    padding: 5px;
+    background-color: #273DCE;
+    transform: translate(250px, 15px);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+footer{
+    color: azure;
+    background-color: hsl(219, 50%, 70%);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
