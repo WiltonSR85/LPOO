@@ -1,11 +1,13 @@
 package unitea.controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import unitea.dao.CriarPedidoDao;
 import unitea.model.PedidoMonitoriaModel;
 
 import java.io.IOException;
@@ -51,6 +53,13 @@ public class CriarPedido extends HttpServlet {
 		String nomechat= request.getParameter("nomechat");
 		
 		PedidoMonitoriaModel pedido= new PedidoMonitoriaModel(idFamiliar,idAluno, informacoes, status, nomechat, disciplina);
+		
+		CriarPedidoDao pedidoDao= new CriarPedidoDao();
+		
+		pedidoDao.CriarPedido(pedido);
+		
+		RequestDispatcher dispatcher= request.getRequestDispatcher("pedidosFamiliar.jsp");
+		dispatcher.forward(request, response);
 	}
 
 }
