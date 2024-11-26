@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITEA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header{
+            background-image: url(projeto.jpeg);
+            filter: brightness(100%);
+            padding: 15px;
+            background-size: contain;
+            width: 100%;
+            height: 190px;
+            color: #ffffff;
+            box-sizing: border-box;
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            display: flex;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            justify-content: space-between;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #cadastromonitor{
+            border: 2px solid #003366 ;
+            border-radius: 5px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            left: 45%;
+            top: 20px;
+            position: absolute;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .meio{
+            padding: 50px 20px;
+            background-color: hsl(219, 50%, 90%);
+        }
+
+        .meio h2 {
+            text-align: center;
+        }
+
+        .medio{
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button[type="submit"] {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #004a99;
+        }
+
+        footer {
+            color: azure;
+            background-color: #0066cc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="position: absolute; font-size: 20px; top: 35px; left: 10%;">UniTEA</h1>
+        <h2 style="position: absolute; font-size: 40px; top: 80px; left: 5%;">Inclusão Escolar</h2>
+        <nav>
+            <ul>
+                <li><a href="CadastrarFamiliar.jsp">Pagina Inicial</a></li>
+                <li><a href="CadastrarFamiliar.jsp">Cadastro Familiar</a></li>
+                <li id="cadastromonitor">Cadastro Monitor</li>
+                <li><a href="Login.jsp">Login</a></li>  
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="meio">
+            <h2>Cadastre-se gratuitamente!</h2>
+            <section class="medio">
+                <form action="cadastrarFamiliar" method="post">
+                    <div>
+                        <h3>Informações do Monitor</h3>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+                    
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    
+                    <button type="submit">Enviar Cadastro</button>
+                    
+                    <br>
+                    <div>
+                        <%
+                        String mensagem = (String) request.getAttribute("mensagem");
+                        if (mensagem != null) {
+                            out.print(mensagem);
+                        }
+                        %>
+                    </div>
+                </form>
+                
+                <!-- Link para Login -->
+                <div style="text-align: center; margin-top: 20px;">
+                    <p>Já tem uma conta? <a href="Login.jsp">Clique aqui para fazer login</a></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <h7>|Promovendo a inclusão escolar,  e construindo caminhos para que alunos com TEA desenvolvam seu potencial.|</h7> 
+        <br>
+        <h8>© 2024 UniTEA.Todos os direitos reservados.</h8>
+     </footer>
+</body>
+</html>
