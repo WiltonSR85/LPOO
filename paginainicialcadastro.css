@@ -74,27 +74,12 @@ header h3{
     text-align: center;
 }
 
-.fundoquadro{
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.fundoquadro1{
-    background-color: #273DCE;
-    padding: -20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    transform: translate(-300px, 80px);
-}
-
 .quadro1{
     background-color: #D5DFF0;
     padding: 100px;
     width: 550px;
     border-radius: 10px;
-    transform: translate(30px, -30px);
+    transform: translate(100px, 30px);
 }
 
 .linha {
@@ -108,7 +93,7 @@ header h3{
 #textomonitoriasgrat{
     font-size: 35px;
     color: #273DCE;
-    top: 500px;
+    top: 460px;
     left: 790px;
     position: absolute;
 }
@@ -122,7 +107,7 @@ header h3{
 #textosecadastre{
     font-size: 35px;
     color: #273DCE;
-    top: 800px;
+    top: 760px;
     left: 120px;
     position: absolute;
 }
@@ -171,7 +156,7 @@ header h3{
 
 footer{
     color: azure;
-    background-color: hsl(219, 50%, 70%);
+    background-color: hsl(219, 84%, 48%);
     text-align: center;
     padding: 20px;
     font-size: 14px;
